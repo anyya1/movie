@@ -134,3 +134,22 @@ h1 {
   flex: 1;
   min-width: 0;
 }
+
+.remove-btn {
+  padding: 9px 16px;
+  border: 1px solid #e2b3a4;
+  border-radius: 10px;
+  background: #fffaf4;
+  color: #b04a2f;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.remove-btn:hover {
+  background: #fbece5;
+  border-color: #c96f4a;
+}
