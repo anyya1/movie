@@ -31,6 +31,76 @@ h1 {
   color: #3b2b22;
 }
 
+/* Форма добавления */
+.add-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #ecdfd2;
+  margin-bottom: 6px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3b2b22;
+}
+
+.field input {
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #d8c6b5;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #3b2b22;
+  background: #fffdfb;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field input::placeholder {
+  color: #a89484;
+}
+
+.field input:focus {
+  border-color: #c96f4a;
+  box-shadow: 0 0 0 3px rgba(201, 111, 74, 0.18);
+}
+
+#addMovie {
+  height: 46px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 10px;
+  background: #c96f4a;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+#addMovie:hover {
+  background: #b35c39;
+}
+
+#addMovie:active {
+  background: #9c4f30;
+}
+
+/* Список фильмов */
 #movieList {
   list-style: none;
   margin: 0;

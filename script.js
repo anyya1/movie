@@ -11,6 +11,9 @@ const moviePosters = [
 ];
 
 const movieList = document.getElementById('movieList');
+const nameInput = document.getElementById('movieName');
+const posterInput = document.getElementById('moviePoster');
+const addButton = document.getElementById('addMovie');
 
 function renderMovies() {
   movieList.innerHTML = '';
@@ -31,5 +34,22 @@ function renderMovies() {
     movieList.append(item);
   });
 }
+
+addButton.addEventListener('click', () => {
+  const title = nameInput.value.trim();
+  const poster = posterInput.value.trim();
+
+  if (!title || !poster) {
+    return;
+  }
+
+  movieTitles.push(title);
+  moviePosters.push(poster);
+
+  nameInput.value = '';
+  posterInput.value = '';
+
+  renderMovies();
+});
 
 renderMovies();
